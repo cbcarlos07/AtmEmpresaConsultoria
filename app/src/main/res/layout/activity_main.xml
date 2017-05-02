@@ -10,4 +10,50 @@
     tools:context="atmempresaconsultoria.cursoandroid.com.atmempresaconsultoria.MainActivity"
     android:background="#ffffff">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/logo"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empresaId"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/menu_empresa"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/servicoId"
+        android:layout_alignTop="@+id/empresaId"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:background="@drawable/menu_servico" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clienteId"
+        android:layout_below="@+id/empresaId"
+        android:layout_alignLeft="@+id/empresaId"
+        android:layout_alignStart="@+id/empresaId"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/menu_cliente" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contatoId"
+        android:layout_alignTop="@+id/clienteId"
+        android:layout_alignRight="@+id/servicoId"
+        android:layout_alignEnd="@+id/servicoId"
+        android:background="@drawable/menu_contato" />
 </RelativeLayout>
